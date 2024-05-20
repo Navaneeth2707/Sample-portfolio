@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+.header {
+  background-color: #0073e6; /* Matched header background color */
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+.header nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.header nav a:hover {
+  background-color: #0059b3; /* Darker shade on hover */
+}
+.outerbox {
+  padding: 20px;
+  border: 1px solid #0073e6; /* Matched border color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 90px auto 20px;
+  background-color: #fff;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0073e6; /* Matched header text color */
+}
+p {
+  margin-bottom: 15px;
+}
+.button {
+  display: block;
+  width: 100%;
+  appearance: none;
+  background-color: #0073e6; /* Matched button background color */
+  border: 1px solid #0073e6; /* Matched button border color */
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+}
+.button:hover {
+  background-color: #0059b3; /* Darker shade on hover */
+}
+.btn-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.btn-inbox {
+  flex: 1 1 calc(50% - 20px); /* Adjusting the width for responsive design */
+  margin: 0 5px;
+}
+@media (max-width: 600px) {
+  .header nav a {
+      font-size: 14px;
+      padding: 6px 8px;
+  }
+  .outerbox {
+      margin: 30px auto 20px;
+      padding: 15px;
+  }
+  .btn-inbox {
+      flex: 1 1 100%; /* Full width on small screens */
+  }
+}
